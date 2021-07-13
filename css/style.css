@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* banner style  */
+.banner-container {
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.banner-left h3{
+    font-size: 36px;
+    color: #ffff;
+}
+.banner-btn ,.highlight-btn{
+    background-color: #E02C6D;
+    font-size: 12px;
+    color: #ffff;
+    padding: 10px 24px;
+    text-decoration: none;
+
+}
+.banner-btn .fas{
+    font-size: 10px;
+    margin-left: 3px;
+
+}
+.banner-right img {
+    width: 526px;
+}
+
+
+/* blog style  */
+.blog-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+    
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+.blog{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.blog .thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.blog-detail{
+    margin-top: 15px;
+}
+.blog-title{
+    font-size: 22px;
+    color: #18191F;
+    font-weight: 700;
+    line-height: 40px;
+}
+.blog-info{
+    font-size: 16px;
+    color: #6C6C6C;
+    line-height: 26px;
+}
+
+/* highlight style  */
+.highlight-container{
+    margin-top: 150px;
+}
+
+.highlight{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.highlight-left{
+    width: 400px;
+
+}
+.highlight-left h3{
+    font-size: 34px;
+    color: #0A0826;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.highlight-left p{
+   font-size: 16px;
+   color: #6C6C6C;
+   line-height: 28px;
+}
+
+.highlight-right img{
+    width: 400px;
+}
+
+
+/* footer style  */
+
+.footer-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer-logo img{
+    width: 300px;
+}
+.footer-container .social i{
+    margin-right: 5px;
+    background-color: rgb(219, 217, 217);
+    color: gray;
+    padding: 7px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
