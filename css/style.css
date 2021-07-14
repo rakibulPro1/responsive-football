@@ -30,9 +30,12 @@ body{
     font-size: 36px;
     color: #ffff;
     margin-bottom: 30px;
-
-
-
+}
+.banner-left p{
+    color: #ffff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 24px;
 }
 .banner-btn ,.highlight-btn{
     background-color: #E02C6D;
@@ -48,7 +51,7 @@ body{
 
 }
 .banner-right img {
-    width: 85%;
+    width: 100%;
 }
 
 
@@ -131,7 +134,8 @@ body{
 .matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 150px;
+    grid-column-gap: 130px;
+    padding: 0 3%;
 }
 .match-logo{
     width: 100px;
@@ -157,7 +161,7 @@ body{
 }
 .match-goal h1{
     background-color: #E02C6D;
-    padding: 20px 0;
+    padding: 20px 5px;
     font-size: 40px;
     color: #ffff;
     border-radius: 10px;
@@ -165,7 +169,7 @@ body{
 }
 .match-btn{
     background-color: rgba(128, 128, 128, 0.199);
-    padding: 10px 0;
+    padding: 10px 5px;
     font-size: 15px;
     color: #18191F;
     text-decoration: none;
@@ -234,7 +238,7 @@ body{
     padding: 0 5%;
 }
 .highlight-left{
-    width: 80%;
+    width: 100%;
 
 }
 .highlight-left h3{
@@ -251,7 +255,7 @@ body{
 }
 
 .highlight-right img{
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -327,7 +331,10 @@ body{
     }
     .news{
         flex-direction: column;
-
+        padding-bottom: 30px;
+    }
+    .news-info h4{
+        margin-top: 20px;
     }
     .news-img img{
         width: 100%;
@@ -346,7 +353,40 @@ body{
 
 /* tablet device  */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    /* banner  */
     .banner-right img {
         width: 100%;
      }
+
+     /* blogs  */
+     .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog .thumbnail img{
+        width: 100%;
+    }
+
+    /* highlight  */
+    .highlight-left h3 {
+        font-size: 30px;
+        
+    }
+
+    /* news  */
+    .newses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+    .news{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .news-info h4{
+        margin-top: 20px;
+    }
+    .news-img img{
+        width: 100%;
+    }
+ 
+
 }
