@@ -7,6 +7,15 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+/* keyframes  */
+@keyframes shadow-pulse{
+    0%{
+        box-shadow:0 0 0 0px rgba(0,0,0,0.2);
+    }
+    100%{
+        box-shadow:0 0 0 20px  rgba(3, 3, 3, 0);
+    }
+}
 /* banner style  */
 .banner-container {
     display: flex;
@@ -42,7 +51,10 @@ body{
     font-size: 12px;
     color: #ffff;
     padding: 10px 24px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: 1s all ease-in-out;
+    animation: shadow-pulse 2s infinite;
 
 }
 .banner-btn .fas{
@@ -221,7 +233,10 @@ body{
     font-size: 10px;
     color: #ffff;
     padding: 5px 10px;
+    border-radius: 5px;
     text-decoration: none;
+    transition: 1s all ease-in-out;
+    animation: shadow-pulse 2s infinite;
 }
 
 /* highlight style  */
